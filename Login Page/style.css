@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/1834312/pexels-photo-1834312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1://images.pexels.com/photos/755858/pexels-photo-755858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
+.formdata {
+    width: 400px;
+    height: 450px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    background: transparent;
+    border: 2px solid #ccc;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 36px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    color: white;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 330px;
+    border-bottom: 2px solid white;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    font-size: 1.1rem;
+    transform: translateY(-50%);
+    transition: .3s;
+    pointer-events: none;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:not(:placeholder-shown) ~ label {
+    top: -12px;
+    font-size: 1rem;
+    color: white;
+}
+
+.inputbox input {
+    width: 270px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.inputbox i {
+    position: absolute;
+    /* top: 20px; */
+    right: 9px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.forgot label {
+    /* margin-right: -10px 0 0 10px; */
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    font-weight: 400;
+    color: white;
+    padding: 2px;
+}
+
+.forgot label a {
+    border-left: 2px solid white;
+    padding: 2px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.forgot label a:hover {
+    text-decoration: underline;
+
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    border: none;
+    margin-top: 20px;
+    /* outline-style: none; */
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #929492;
+    color: white;
+}
+
+.Sign-up {
+    margin-top: 20px;
+    text-align: center;
+
+
+}
+
+.Sign-up p {
+    color: white;
+}
+
+.Sign-up p a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    /* transition: color 0.3s; */
+    font-weight: 700;
+}
+
+.Sign-up p a:hover {
+    text-decoration: underline;
+    color: white;
+
+}
